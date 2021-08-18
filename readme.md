@@ -1,7 +1,7 @@
-#矩阵分析与应用大作业
-###环境
+# 矩阵分析与应用大作业
+### 环境
 * python3.7.5
-###文件结构
+### 文件结构
 ```
 MatrixFactorization
 |____ data                          # 样例文件夹，其中的example.txt包含了用于测试的所有矩阵
@@ -15,7 +15,7 @@ MatrixFactorization
 |____ LoadData.py                   # 加载矩阵数据脚本
 
 ```
-###参数含义
+### 参数含义
 运行python脚本
 >python main.py -h
 
@@ -35,9 +35,9 @@ MatrixFactorization
   - `--model=HR`  : Housholder约简
   - `--model=GR`  : Givens约简 
   - `--model=URV` : URV分解
-###运行实例和结果
+### 运行实例和结果
 >python main --model=LU --input=data/example.txt
-####输出
+#### 输出
 ```
 P=[[1. 0. 0. 0.]
  [0. 0. 0. 1.]
@@ -54,7 +54,7 @@ U=[[ 1.    2.   -3.    4.  ]
 ```
 
 >python main --model=QR --input=data/example.txt
-####输出
+#### 输出
 ```
 Q=[[ 0.   -0.8  -0.6 ]
  [ 0.6   0.48 -0.64]
@@ -65,7 +65,7 @@ R=[[ 5. 25. -4.]
 ```
 
 >python main --model=HR --input=data/example.txt
-####输出
+#### 输出
 ```
 Q=[[ 0.   -0.8  -0.6 ]
  [ 0.6   0.48 -0.64]
@@ -76,7 +76,7 @@ R=[[ 5. 25.  0.]
 ```
 
 >python main --model=GR --input=data/example.txt
-####输出
+#### 输出
 ```
 Q=[[ 0.   -0.8  -0.6 ]
  [ 0.6   0.48 -0.64]
@@ -87,7 +87,7 @@ R=[[ 5. 25. -4.]
 ```
 
 >python main --model=URV --input=data/example.txt
-####输出
+#### 输出
 ```
 U=[[-0.66666667 -0.66666667  0.33333333]
  [ 0.33333333 -0.66666667 -0.66666667]
